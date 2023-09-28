@@ -1,0 +1,91 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+:root{
+    --clr:#0ab3ff;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background:url(abstract-swirl-pattern-corolful-digital-art-uhdpaper.com-4K-6.2639.jpg);
+}
+
+form{
+    background: #29313c;
+    padding: 60px 80px 60px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+}
+
+
+form h2{
+    color: #fff;
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 1.25em;
+    letter-spacing: 0.1em;
+    margin-bottom: 50px;
+}
+
+.inputBox{
+    position: relative;
+    width: 300px;
+    margin-bottom: 40px;
+}
+
+.inputBox input{
+    position: relative;
+    width: 100%;
+    padding: 10px 0;
+    background: transparent;
+    border: none;
+    border-bottom: 2px  solid #999;
+    outline: none;
+    color: #fff;
+    font-size: 1em;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+
+}
+
+.inputBox label{
+    position: absolute;
+    left: 0;
+    padding: 10px 0;
+    pointer-events: none;
+    color: #999;
+    text-transform: uppercase;
+
+}
+
+.inputBox label span{
+    position: relative;
+    display: inline-flex;
+    letter-spacing: 0.05em;
+    transition: 0.2s ease-in-out;
+}
+
+.inputBox input:focus ~ label span,
+.inputBox input:valid ~ label span{
+   color: var(--clr);
+   letter-spacing: 0.15em;
+   transform: translateY(-25px);
+
+}
+.inputBox input:focus,
+.inputBox input:valid{
+    border-bottom: 2px solid var(--clr);
+}
+
+.table{
+    margin-right: 10px;
+}
